@@ -5,65 +5,85 @@
 
 /* CSS Custom Properties */
 :root {
-    /* Sage Green - Primary */
-    --sage-50: #f6f7f4;
-    --sage-100: #e8ebe3;
-    --sage-200: #d3d9c9;
-    --sage-300: #b5c0a4;
-    --sage-400: #96a67e;
-    --sage-500: #7a8c62;
-    --sage-600: #60704c;
-    --sage-700: #4c593e;
-    --sage-800: #3f4935;
-    --sage-900: #363e2f;
+    /* Calm Clinical Blue - Primary */
+    --navy-50: #f0f2f7;
+    --navy-100: #e0e4ed;
+    --navy-200: #c1c9db;
+    --navy-300: #9dabc5;
+    --navy-400: #7a8eb0;
+    --navy-500: #5a729c;
+    --navy-600: #4a5f85;
+    --navy-700: #3d4d6d;
+    --navy-800: #2A3A66;
+    --navy-900: #1e2a4a;
     
-    /* Warm Neutrals */
-    --warm-50: #fdfcfa;
-    --warm-100: #f9f6f1;
-    --warm-200: #f2ebe0;
-    --warm-300: #e8dcc9;
-    --warm-400: #d9c7a9;
-    --warm-500: #c4a97a;
-    --warm-600: #b08f5a;
-    --warm-700: #927448;
-    --warm-800: #775f3e;
-    --warm-900: #634f36;
+    /* Therapy Blue */
+    --blue-50: #f5f7fc;
+    --blue-100: #E7EEFF;
+    --blue-200: #d0deff;
+    --blue-300: #a8c2f7;
+    --blue-400: #8aa8eb;
+    --blue-500: #6E8ECF;
+    --blue-600: #5a78b8;
+    --blue-700: #4a6299;
+    --blue-800: #3d5180;
+    --blue-900: #334368;
     
-    /* Teal Accent */
-    --teal-50: #f0f9f9;
-    --teal-100: #d4efed;
-    --teal-200: #a9dfdb;
-    --teal-300: #77c7c3;
-    --teal-400: #4fa9a6;
-    --teal-500: #358b8a;
-    --teal-600: #296f70;
-    --teal-700: #255a5c;
-    --teal-800: #23494b;
-    --teal-900: #213d3f;
+    /* Lavender Accent */
+    --lavender-50: #faf8fe;
+    --lavender-100: #f3effe;
+    --lavender-200: #e8dffd;
+    --lavender-300: #CABAF5;
+    --lavender-400: #b9a3f0;
+    --lavender-500: #a78be8;
+    --lavender-600: #9070d6;
+    --lavender-700: #7a5abc;
+    --lavender-800: #654a9c;
+    --lavender-900: #533d80;
     
     /* Neutrals */
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
+    --gray-50: #F4F4F6;
+    --gray-100: #ebebef;
+    --gray-200: #dcdce2;
+    --gray-300: #c5c5cd;
+    --gray-400: #9e9ea8;
+    --gray-500: #7a7a86;
+    --gray-600: #5c5c66;
+    --gray-700: #4a4a52;
+    --gray-800: #3C3C48;
+    --gray-900: #2a2a32;
     
     /* Semantic Colors */
-    --primary: var(--sage-600);
-    --primary-light: var(--sage-400);
-    --primary-dark: var(--sage-700);
-    --secondary: var(--teal-500);
-    --accent: var(--warm-500);
-    --background: var(--warm-50);
+    --primary: var(--blue-500);
+    --primary-light: var(--blue-400);
+    --primary-dark: var(--navy-800);
+    --secondary: var(--lavender-300);
+    --accent: var(--lavender-500);
+    --background: var(--gray-50);
     --surface: #ffffff;
     --text: var(--gray-800);
     --text-light: var(--gray-500);
-    --text-dark: var(--gray-900);
+    --text-dark: var(--navy-800);
+    
+    /* Legacy mappings for compatibility */
+    --sage-100: var(--blue-100);
+    --sage-200: var(--blue-200);
+    --sage-300: var(--blue-300);
+    --sage-400: var(--blue-400);
+    --sage-500: var(--blue-500);
+    --sage-600: var(--blue-600);
+    --sage-700: var(--navy-700);
+    --warm-50: var(--gray-50);
+    --warm-100: var(--blue-100);
+    --warm-200: var(--lavender-200);
+    --warm-300: var(--lavender-300);
+    --warm-500: var(--lavender-500);
+    --teal-100: var(--blue-100);
+    --teal-200: var(--blue-200);
+    --teal-300: var(--lavender-300);
+    --teal-400: var(--blue-400);
+    --teal-500: var(--blue-500);
+    --teal-600: var(--navy-700);
     
     /* Typography */
     --font-display: 'DM Serif Display', Georgia, serif;
@@ -184,13 +204,13 @@ h4 { font-size: 1.25rem; }
 .btn-primary {
     background: var(--primary);
     color: white;
-    box-shadow: 0 2px 8px -2px rgba(96, 112, 76, 0.4);
+    box-shadow: 0 2px 8px -2px rgba(42, 58, 102, 0.4);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px -2px rgba(96, 112, 76, 0.5);
+    box-shadow: 0 4px 12px -2px rgba(42, 58, 102, 0.5);
 }
 
 .btn-secondary {
@@ -280,6 +300,17 @@ h4 { font-size: 1.25rem; }
     color: var(--text-dark);
 }
 
+.logo-img {
+    height: 48px;
+    width: auto;
+}
+
+.footer-logo {
+    height: 56px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
 .logo-icon {
     color: var(--primary);
     font-size: 1.25rem;
@@ -360,9 +391,9 @@ h4 { font-size: 1.25rem; }
     inset: 0;
     background: linear-gradient(
         135deg,
-        var(--sage-100) 0%,
-        var(--warm-100) 50%,
-        var(--teal-100) 100%
+        var(--blue-100) 0%,
+        var(--lavender-100) 50%,
+        var(--gray-50) 100%
     );
 }
 
@@ -371,9 +402,9 @@ h4 { font-size: 1.25rem; }
     inset: 0;
     opacity: 0.4;
     background-image: 
-        radial-gradient(circle at 20% 50%, var(--sage-200) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, var(--teal-200) 0%, transparent 40%),
-        radial-gradient(circle at 40% 80%, var(--warm-200) 0%, transparent 45%);
+        radial-gradient(circle at 20% 50%, var(--blue-200) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, var(--lavender-200) 0%, transparent 40%),
+        radial-gradient(circle at 40% 80%, var(--blue-200) 0%, transparent 45%);
 }
 
 .hero-content {
@@ -581,7 +612,7 @@ section {
 
 /* Spaces Section */
 .spaces-section {
-    background: linear-gradient(180deg, var(--background) 0%, var(--warm-100) 100%);
+    background: linear-gradient(180deg, var(--background) 0%, var(--blue-100) 100%);
 }
 
 .spaces-grid {
@@ -877,7 +908,7 @@ section {
 
 /* Membership Section */
 .membership-section {
-    background: linear-gradient(180deg, var(--warm-100) 0%, var(--sage-100) 100%);
+    background: linear-gradient(180deg, var(--lavender-100) 0%, var(--blue-100) 100%);
 }
 
 .pricing-grid {
@@ -902,7 +933,7 @@ section {
 }
 
 .pricing-card.featured {
-    background: linear-gradient(135deg, var(--sage-600) 0%, var(--sage-700) 100%);
+    background: linear-gradient(135deg, var(--blue-500) 0%, var(--navy-800) 100%);
     color: white;
     transform: scale(1.05);
     box-shadow: var(--shadow-xl);
@@ -986,7 +1017,7 @@ section {
 }
 
 .pricing-card.featured .pricing-features svg {
-    color: var(--teal-300);
+    color: var(--lavender-300);
 }
 
 .pricing-card.featured .btn-primary {
@@ -1052,7 +1083,7 @@ section {
 
 /* Community Section */
 .community-section {
-    background: linear-gradient(180deg, var(--sage-100) 0%, var(--teal-100) 100%);
+    background: linear-gradient(180deg, var(--blue-100) 0%, var(--lavender-100) 100%);
 }
 
 .community-content {
@@ -1193,7 +1224,7 @@ section {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, var(--sage-600) 0%, var(--teal-600) 100%);
+    background: linear-gradient(135deg, var(--navy-800) 0%, var(--blue-500) 100%);
     padding: var(--space-4xl) 0;
 }
 
@@ -1279,7 +1310,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--sage-100);
+    background: var(--blue-100);
 }
 
 .map-placeholder svg {
